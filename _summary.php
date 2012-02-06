@@ -180,7 +180,13 @@ function cbDisplayFooter($number, $withNextAndPrevious) {
     global $DOWNLOAD_URL;
     $path = "../en/" . $english_file;
     $extras = $extras . "\n | " . cbGenEmailAttachment($path);
+
+    //
+    // Email the next five issues
+    //
+    $extras = $extras . "\n | " . cbGenMultipleEmailAttachments($number);
   }
+
 
   if ($extras != "") $extras = $extras . " |";
 

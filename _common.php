@@ -215,6 +215,16 @@ function cbGenEmailAttachment($file) {
       . '">' . "Send email" . '</a>';
 }
 
+function cbGenMultipleEmailAttachments($heftNumber) {
+  global $EMAIL_MULTIPLE_URL;
+  $count = 5;
+  $result = '<a href="' . $EMAIL_MULTIPLE_URL . '?start=' . $heftNumber . '&count=' . $count . '">'
+    . 'Email next ' . $count . ' issues'
+    . '</a>';
+  return $result;
+}
+
+
 function cbGenUpload($language, $number, $text) {
   global $UPLOAD_URL;
 
