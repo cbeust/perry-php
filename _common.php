@@ -116,6 +116,7 @@ function cbHeader($title, $pageTitle, $withRss) {
 . "<body>\n"
 . cbLoginInfo()
 . "<h1 align='center'>" . $pageTitle . "</h1>"
+. "<h3 align='center'>" . "Maintained by <a href='mailto:cedric@beust.com'>C&eacute;dric Beust</a>" . "</h3>"
 . "\n"
 ;
 }

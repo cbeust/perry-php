@@ -120,6 +120,6 @@ echo '<script src="http://www.google-analytics.com/urchin.js" type="text/javascr
 ;
 
 
-include "../news.html";
+include "news.html";
 
 ?>
