@@ -116,7 +116,6 @@ function cbHeader($title, $pageTitle, $withRss) {
 . "<body>\n"
 . cbLoginInfo()
 . "<h1 align='center'>" . $pageTitle . "</h1>"
-. "<h3 align='center'>" . "Maintained by <a href='mailto:cedric@beust.com'>C&eacute;dric Beust</a>" . "</h3>"
 . "\n"
 ;
 }
@@ -271,7 +270,7 @@ function cbSendEmailWithAttachment($fileatt, $fileatt_name) {
   $email_from = "cedric@beust.com"; // Who the email is from
   $email_subject = $fileatt_name;
   $email_message = "Perry Rhodan " . $fileatt_name . "\n\n";
-  $email_to = "cbeust@kindle.com"; // Who the email is to
+  $email_to = "cedricbeust@kindle.com"; // Who the email is to
   $headers = "From: ".$email_from;
 
   $file = fopen($fileatt,'rb');
