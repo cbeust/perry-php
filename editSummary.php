@@ -70,6 +70,11 @@ else {
 }
 
   $cycleRow = cbFindCycleRow($number);
+
+  if (mysql_numrows($cycleRow) == 0) {
+    return;
+  }
+
   $cycle = mysql_result($cycleRow, 0, "german_title");
   $summaryRow = cbFindSummaryRow($number);
   if (mysql_numrows($summaryRow) > 0) {
